@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct auth_systemApp: App {
+    // 인증 컨테이너 초기화
+    private let authContainer = AuthContainer.shared
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -26,6 +29,7 @@ struct auth_systemApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.authContainer, authContainer)
         }
         .modelContainer(sharedModelContainer)
     }

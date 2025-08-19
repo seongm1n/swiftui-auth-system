@@ -1,0 +1,39 @@
+# Project-specific files
+CLAUDE.md
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcworkspace/
+!*.xcodeproj/xcuserdata/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcuserdata/
+
+# User settings
+xcuserdata/
+
+# Build products
+DerivedData/
+build/
+Build/
+
+# Archives
+*.xcarchive
+
+# CocoaPods
+Pods/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
